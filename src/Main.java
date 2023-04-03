@@ -55,8 +55,22 @@ public class Main {
                              {30, 90, 100, 100}};
 
         //print all the test score
+        for(int i = 0; i< gradeBook.length; i++){
+            for(int j = 0; j < gradeBook[i].length; j++){
+                System.out.print(gradeBook[i][j]+ " ");
+            }
+            System.out.println();
+        }
 
+        for(int i = 0; i < gradeBook.length; i++){
+            double average = 0.0;
+            for(int j = 0; j < gradeBook[i].length; j++){
+                average += gradeBook[i][j];
+            }
+            average /= gradeBook[i].length;
+            System.out.println("Student "+ (i+1) + ": Test average is "+ average);
 
+        }
 
 
         }
